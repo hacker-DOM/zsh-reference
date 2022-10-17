@@ -1,3 +1,31 @@
 # Zsh Reference
 
-
+- set (bash)
+	- `-x` debugging
+	- `e` halt on errors (non-zero return codes of programs)
+	- `u` treat unset variables as an error and exit immediately
+	- `k` All arguments in the form of assignment statements are placed in the environment for a command, not just those that precede the command name.
+	- `o` assignment of variables for subprograms
+	- `m` use builtins like `fg` and `bg`
+- test
+- builtin symbols
+- info
+	- `whence`
+		- zsh builtin
+		- ` `
+			- interpret arg, with expansion if defined as an `alias`
+			- similar to `command -v`
+		- `-v`
+			- display type of arg, with location if defined as a function, or binary
+			- equivalent to `type` and `command -V`
+		- `-c`
+			- same as `-v`
+			- but display content of shell functions instead of locations
+			- equivalent to `which`
+		- `-a`
+			- show all occurrences on command path
+			- equivalent to `where`
+		- `-p`
+			- search only `PATH` for command
+			- ignores builtins, aliases, or shell functions
+// builtins, binaries, aliases, shell functions
